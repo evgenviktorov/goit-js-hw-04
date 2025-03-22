@@ -1,6 +1,18 @@
 console.log('-- task-2 --');
 
-function calcAverageCalories(days) {}
+function calcAverageCalories(days) {
+  if (days.length === 0) {
+    return 0;
+  }
+
+  let sumCalories = 0;
+
+  for (const key of days) {
+    sumCalories += key.calories;
+  }
+
+  return sumCalories / days.length;
+}
 
 // ==============
 
