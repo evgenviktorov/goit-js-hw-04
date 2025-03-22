@@ -1,5 +1,7 @@
 console.log('-- task-2 --');
 
+function calcAverageCalories(days) {}
+
 // ==============
 
 console.log(

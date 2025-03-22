@@ -1,5 +1,15 @@
 console.log('-- task-1 --');
 
+function isEnoughCapacity(products, containerSize) {
+  let totalProducts = 0;
+
+  for (let key in products) {
+    totalProducts += products[key];
+  }
+
+  return totalProducts <= containerSize;
+}
+
 // ==============
 
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
